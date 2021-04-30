@@ -22,7 +22,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-family: $font-family--;
+  font-family: $font-family--main;
   color: $color-default-black;
 
   background-color: $color-default-white;
@@ -79,6 +79,7 @@ select {
 
 // ie11 X removal
 input {
+
   &::-ms-clear,
   &::-ms-reveal {
     display: none;
