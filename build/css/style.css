@@ -1637,7 +1637,7 @@ main {
 
 .products {
   background-color: #e5e5e5;
-  margin-bottom: 30px; }
+  margin-bottom: 198px; }
   .products__title {
     text-transform: uppercase;
     z-index: 2; }
@@ -1765,6 +1765,101 @@ main {
     font-size: 16px;
     line-height: 19px;
     color: #9a9696; }
+
+.event {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 270px;
+  min-height: 302px;
+  padding: 34px 20px;
+  background-color: #ffffff;
+  border-radius: 20px; }
+  .event__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 6px; }
+  .event__dates {
+    margin: 0;
+    font-family: "Rubik", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #005cbb; }
+  .event__price {
+    margin: 0;
+    font-family: "Rubik", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 0.095em;
+    color: #ff8a00; }
+  .event__type {
+    display: block;
+    margin: 0;
+    margin-bottom: 27px;
+    font-family: "Rubik", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: #5a6b79; }
+  .event__name {
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: "Rubik", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    color: #0c0c0c; }
+  .event__locale {
+    margin-top: auto; }
+  .event__locale-type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: "Rubik", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    color: #0c0c0c; }
+  .event__icon {
+    margin-left: 3px; }
+  .event__place {
+    margin: 0;
+    font-family: "Rubik", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #5a6b79; }
+  .event .btn {
+    display: none;
+    width: 100%; }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,

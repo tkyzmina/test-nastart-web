@@ -1,0 +1,97 @@
+.event {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 270px;
+  min-height: 302px;
+  padding: 34px 20px;
+  background-color: $color-default-white;
+  border-radius: 20px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 6px;
+  }
+
+  &__dates {
+    margin: 0;
+    font-family: $font-family--main;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: $color-navy-blue;
+  }
+
+  &__price {
+    margin: 0;
+    font-family: $font-family--main;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 0.095em;
+    color: $color-dark-orange;
+  }
+
+  &__type {
+    display: block;
+    margin: 0;
+    margin-bottom: 27px;
+    font-family: $font-family--main;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: $color-shuttle-grey;
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: $font-family--main;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    color: $color-black2;
+  }
+
+  &__locale {
+    margin-top: auto;
+  }
+
+  &__locale-type {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: $font-family--main;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    color: $color-black2;
+
+  }
+
+  &__icon {
+    margin-left: 3px;
+  }
+
+  &__place {
+    margin: 0;
+    font-family: $font-family--main;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: $color-shuttle-grey;
+  }
+
+  .btn {
+    display: none;
+    width: 100%;
+  }
+}
