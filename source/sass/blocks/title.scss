@@ -1,0 +1,19 @@
+.title {
+  margin: 0;
+  font-family: $font-family--main;
+  font-style: normal;
+  color: $color-nero;
+
+  &--h1 {
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 700;
+  }
+
+  &--h2 {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
