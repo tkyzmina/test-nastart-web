@@ -9,6 +9,7 @@
   font-size: 16px;
   line-height: 18px;
   color: $color-default-white;
+  cursor: pointer;
   text-transform: uppercase;
   border: none;
   transition: background-color $default-transition-settings;
@@ -26,4 +27,16 @@
       background-color: darken($color-neon-carrot, 10%);
     }
   }
+
+  &--blue {
+    font-size: 18px;
+    line-height: 21px;
+    max-height: 0;
+    height: 50px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: linear-gradient(180deg, #5363f1 0%, #2134df 100%);
+    transition: max-height $default-transition-settings;
+  }
+
 }

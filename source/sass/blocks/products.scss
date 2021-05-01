@@ -1,0 +1,59 @@
+.products {
+  background-color: $color-whisper;
+  margin-bottom: 30px;
+
+
+
+  &__title {
+    text-transform: uppercase;
+    z-index: 2;
+
+    @include viewport--sm {
+
+      margin-bottom: 30px;
+    }
+  }
+
+  .layout {
+    position: relative;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+
+    @include viewport--sm {
+      flex-direction: column;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70px;
+    height: 40px;
+    margin-top: 12px;
+  }
+
+  .button-prev {
+    transform: rotate(180deg);
+  }
+
+  .button {
+    width: 30px;
+    height: 32px;
+    background: url('/img/content/arrow-right.png');
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.9;
+    }
+  }
+}

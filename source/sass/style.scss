@@ -2,7 +2,7 @@
 //---------------------------------
 
 @import "vendor/normalize";
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 //---------------------------------
@@ -23,6 +23,9 @@
 @import "blocks/title";
 @import "blocks/intro";
 @import "blocks/btn";
+@import "blocks/products";
+@import "blocks/card";
+@import "blocks/actions";
 
 
 // используйте это для отключения ховеров на тач устройствах

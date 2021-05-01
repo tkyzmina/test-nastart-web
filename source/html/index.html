@@ -21,7 +21,7 @@
 
     <main>
       <section class="intro">
-        <div class="container">
+        <div class="layout">
           <div class="intro__inner">
             <h1 class="intro__title title title--h1">1С&nbsp;&mdash; Отчетность</h1>
             <p class="intro__text">отчетность из 1С одним кликом</p>
@@ -35,8 +35,44 @@
           </div>
         </div>
       </section>
-      <div class="container">
+      <section class="products">
+        <div class="layout">
+          <div class="products__wrapper">
+            <h2 class="products__title title title--h1">Продукты</h2>
+            <div class="products__controls">
+              <div class="button button-prev"></div>
+              <div class="button button-next"></div>
+            </div>
+          </div>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"> @@include("source/html/components/card.html")</div>
+              <div class="swiper-slide"> @@include("source/html/components/card.html")</div>
+              <div class="swiper-slide"> @@include("source/html/components/card.html")</div>
+              <div class="swiper-slide"> @@include("source/html/components/card.html")</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="actions">
+        <div class="layout">
+          <div class="actions__info">
+            <h3 class="actions__title title title--h3">Мероприятия</h3>
+            <p class="actions__text">План мероприятий на 1 квартал 2022 г. :</p>
+            <p class="actions__text"> Лекции/ Курсы/ Семинары</p>
+          </div>
+          <div class="actions__events">
+            <div class="actions__list"> @@include("source/html/components/card.html")
+              @@include("source/html/components/card.html")</div>
+            <div class="actions__list"> @@include("source/html/components/card.html")
+              @@include("source/html/components/card.html")</div>
+          </div>
+        </div>
 
+
+
+      </section>
+      <div class="container">
       </div>
     </main>
 

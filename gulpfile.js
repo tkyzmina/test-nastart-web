@@ -53,6 +53,11 @@ const css = () => {
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 };
+const bootstrap = () => {
+  return gulp
+    .src(["source/sass/vendor/bootstrap-grid.css"])
+    .pipe(gulp.dest("build/css"));
+};
 
 const js = () => {
   return gulp
@@ -150,7 +155,7 @@ const clean = () => {
   return del("build");
 };
 
-const build = gulp.series(clean, svgo, copy, css, sprite, js, html);
+const build = gulp.series(clean, svgo, copy, css, sprite, js, html, bootstrap);
 
 const start = gulp.series(build, syncserver);
 

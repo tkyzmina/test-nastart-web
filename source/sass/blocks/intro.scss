@@ -1,7 +1,11 @@
 .intro {
   background-color: $color-whisper;
 
-  .container {
+  @include viewport--md {
+    margin-bottom: 50px;
+  }
+
+  .layout {
     display: flex;
     justify-content: space-between;
     align-items: center;
