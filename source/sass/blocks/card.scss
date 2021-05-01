@@ -2,7 +2,6 @@
   position: relative;
   min-width: 270px;
 
-
   .btn {
     width: 100%;
     position: absolute;
@@ -13,23 +12,24 @@
   }
 
   &__content {
-
     background: $color-default-white;
     box-shadow: 0 1px 20px rgba(153, 175, 255, 0.4);
     border-radius: 20px;
     overflow: hidden;
     transition: height $default-transition-settings;
+  }
 
-    &:hover {
+  &:hover {
+    .card__content {
       border-bottom-right-radius: 0;
       border-bottom-left-radius: 0;
+    }
 
-      ~.btn {
-        width: 100%;
-        opacity: 1;
-        bottom: 0;
-        max-height: 50px;
-      }
+    >.btn {
+      width: 100%;
+      opacity: 1;
+      bottom: 0;
+      max-height: 50px;
     }
   }
 
