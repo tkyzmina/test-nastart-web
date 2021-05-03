@@ -242,7 +242,7 @@
     </div>
     <p class="event__place">Учебный класс </p>
   </div>
-  <button class="btn btn--orange">Записаться</button>
+  <button class="btn btn--orange" data-modal="sign-up">Записаться</button>
 </article>
 
               <article class="event">
@@ -260,7 +260,7 @@
     </div>
     <p class="event__place">Учебный класс </p>
   </div>
-  <button class="btn btn--orange">Записаться</button>
+  <button class="btn btn--orange" data-modal="sign-up">Записаться</button>
 </article>
 
             </div>
@@ -280,7 +280,7 @@
     </div>
     <p class="event__place">Учебный класс </p>
   </div>
-  <button class="btn btn--orange">Записаться</button>
+  <button class="btn btn--orange" data-modal="sign-up">Записаться</button>
 </article>
 
               <article class="event">
@@ -298,7 +298,7 @@
     </div>
     <p class="event__place">Учебный класс </p>
   </div>
-  <button class="btn btn--orange">Записаться</button>
+  <button class="btn btn--orange" data-modal="sign-up">Записаться</button>
 </article>
 
             </div>
@@ -312,31 +312,24 @@
     <footer class="footer"></footer>
 
 
-    <div class="modal modal--preload modal--feedback    ">
+    
+
+    <div class="modal modal--preload modal--sign-up    modal--no-scale  ">
   <div class="modal__wrapper">
     <div class="modal__overlay"></div>
     <div class="modal__content">
 
-      <p class="modal__description">Обычная модалка</p>
+      <h3 class="modal__title title title--h3">Записаться на мероприятие</h3>
+<form action="" class="request">
+  <label class="request__label">
+    <input type="text" placeholder="Имя" name="Name" required>
+  </label>
+  <label class="request__label">
+    <input type="tel" placeholder="Телефон" name="Phone" id="request-tel" required>
+  </label>
+  <button class="btn btn--orange" type="submit">Отправить</button>
 
-
-      <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап">
-        <svg width="15" height="15">
-          <use xlink:href="#icon-close"></use>
-        </svg>
-      </button>
-
-    </div>
-  </div>
-</div>
-
-
-    <div class="modal modal--preload modal--success   modal--fit-content   modal--no-scale   modal--some-mod ">
-  <div class="modal__wrapper">
-    <div class="modal__overlay"></div>
-    <div class="modal__content">
-
-      <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл и передан модификатор `some-mod`</p>
+</form>
 
 
       <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап">

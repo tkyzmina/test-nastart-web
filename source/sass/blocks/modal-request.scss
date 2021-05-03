@@ -1,0 +1,33 @@
+.request {
+  display: flex;
+  flex-direction: column;
+
+  &__label {
+    margin-bottom: 15px;
+
+    &:last-of-type {
+      margin-bottom: 60px;
+    }
+
+    input {
+      width: 100%;
+      padding: 11px 15px;
+      border: none;
+      background-color: $color-white;
+    }
+  }
+}
+
+.modal__title {
+  margin-bottom: 40px;
+}
+
+.modal__close-btn {
+  fill: $color-nobel;
+}
+
+.modal--sign-up {
+  .modal__content {
+    border-radius: 20px;
+  }
+}

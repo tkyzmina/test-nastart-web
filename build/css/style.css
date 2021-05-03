@@ -1977,6 +1977,33 @@ main {
       z-index: 2;
       opacity: 1; }
 
+.request {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .request__label {
+    margin-bottom: 15px; }
+    .request__label:last-of-type {
+      margin-bottom: 60px; }
+    .request__label input {
+      width: 100%;
+      padding: 11px 15px;
+      border: none;
+      background-color: #f2f2f2; }
+
+.modal__title {
+  margin-bottom: 40px; }
+
+.modal__close-btn {
+  fill: #9a9696; }
+
+.modal--sign-up .modal__content {
+  border-radius: 20px; }
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
