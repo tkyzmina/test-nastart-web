@@ -1,14 +1,14 @@
 .feedback {
   padding-top: 300px;
   padding-bottom: 500px;
-  background: url("/img/content/feedback-bg.svg") no-repeat 50% 0;
+  background: url("../img/content/feedback-bg.svg") no-repeat 50% 0;
 
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px 100px;
-    background: url("/img/content/feedback@1x.png") no-repeat 40% 50%, linear-gradient(180deg, #9953f1 0%, #6a21df 100%);
+    background: url("../img/content/feedback@1x.png") no-repeat 40% 50%, linear-gradient(180deg, #9953f1 0%, #6a21df 100%);
     box-shadow: 0 1px 20px rgba(153, 175, 255, 0.25);
     border-radius: 20px;
 
@@ -98,7 +98,7 @@
   }
 
   &__check:checked+label::before {
-    background-image: url("/img/svg/tick.svg");
+    background-image: url("../img/svg/tick.svg");
     background-size: cover;
   }
 
