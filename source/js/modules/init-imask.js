@@ -1,8 +1,12 @@
 import IMask from "imask";
-var element = document.getElementById("request-tel");
-var maskOptions = {
+let mask = "";
+const maskOptions = {
   mask: "+{7}(000)000-00-00",
 };
-var mask = IMask(element, maskOptions);
+
+const inputs = document.querySelectorAll("input[type=tel]");
+inputs.forEach((item) => {
+  mask = IMask(item, maskOptions);
+});
 
 export { mask };
