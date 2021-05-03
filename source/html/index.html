@@ -35,7 +35,7 @@
           </div>
         </div>
       </section>
-      <section class="products">
+      <section class="products" id="products">
         <div class="layout">
           <div class="products__wrapper">
             <h2 class="products__title title title--h1">Продукты</h2>
@@ -54,7 +54,7 @@
           </div>
         </div>
       </section>
-      <section class="actions">
+      <section class="actions" id="events">
         <div class="layout">
           <div class="actions__info">
             <h2 class="actions__title title title--h2">Мероприятия</h2>
@@ -73,7 +73,7 @@
           </div>
         </div>
       </section>
-      <section class="news">
+      <section class="news" id="news">
         <div class="layout">
           <div class="news__info">
             <h2 class="news__title title title--h2">Hовости</h2>
@@ -117,6 +117,32 @@
                 })
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="feedback" id="feedback">
+        <h2 class="visually-hidden">Получить
+          консультацию</h2>
+        <div class="layout">
+          <div class="feedback__inner">
+            <div class="feedback__info">
+              <p class="feedback__text">Получить<b>
+                  консультацию онлайн
+                  <em>бесплатно</em></b></p>
+            </div>
+            <form class="feedback__form" action="">
+              <label class="feedback__label">
+                <input class="feedback__input" type="text" name="feedback-name" placeholder="Имя" required>
+              </label>
+              <label class="feedback__label">
+                <input class="feedback__input" type="email" name="feedback-email" placeholder="E-mail" required>
+              </label>
+              <input class="feedback__check" type="checkbox" name="feedback-check" id="agree" checked>
+              <label class="feedback__label-check" for="agree">Даю свое согласие на обработку персональных данных в
+                соответствии с <a class="feedback__link" href="#">политикой конфиденциальности</a>
+              </label>
+              <button class="btn btn--orange" type="submit">Отправить</button>
+            </form>
           </div>
         </div>
       </section>

@@ -34,13 +34,15 @@
       <button class="header__nav-open" type="button" aria-label="Открыть меню">
         <span></span>
       </button>
-      <ul class="header__nav-list header__nav-list--activ e">
-        <li class="header__nav-item"><a class="header__nav-link" href="#">Продукты</a></li>
-        <li class="header__nav-item"><a class="header__nav-link" href="#">Mероприятия</a></li>
-        <li class="header__nav-item"><a class="header__nav-link" href="#">Новости</a></li>
-        <li class="header__nav-item"><a class="header__nav-link" href="#">Обратная связь</a></li>
-        <li class="header__nav-item"><a class="header__nav-link" href="#">Контакты</a></li>
-      </ul>
+      <div class="header__nav-wrapper">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a class="header__nav-link js-trigger" href="#products">Продукты</a></li>
+          <li class="header__nav-item"><a class="header__nav-link js-trigger" href="#events">Mероприятия</a></li>
+          <li class="header__nav-item"><a class="header__nav-link js-trigger" href="#news">Новости</a></li>
+          <li class="header__nav-item"><a class="header__nav-link js-trigger" href="#feedback">Обратная связь</a></li>
+          <li class="header__nav-item"><a class="header__nav-link js-trigger" href="#contacts">Контакты</a></li>
+        </ul>
+      </div>
     </nav>
   </div>
 </header>

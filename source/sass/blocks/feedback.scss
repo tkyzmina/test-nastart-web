@@ -1,0 +1,140 @@
+.feedback {
+  padding-top: 300px;
+  padding-bottom: 500px;
+  background: url("/img/content/feedback-bg.svg") no-repeat 50% 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    background: url("/img/content/feedback@1x.png") no-repeat 40% 50%, linear-gradient(180deg, #9953f1 0%, #6a21df 100%);
+    box-shadow: 0 1px 20px rgba(153, 175, 255, 0.25);
+    border-radius: 20px;
+
+    @include viewport--md {
+      background: linear-gradient(180deg, #9953f1 0%, #6a21df 100%);
+      padding: 30px 5%;
+    }
+
+    @include viewport--sm {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__info {
+    margin-right: 20px;
+
+    @include viewport--sm {
+      margin-right: 0;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+
+    @include viewport--sm {
+      width: 100%;
+    }
+  }
+
+  &__label {
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 6px 10px;
+    border: none;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid $color-link-water;
+    color: $color-link-water;
+    cursor: pointer;
+
+    &::placeholder {
+      color: $color-link-water;
+    }
+  }
+
+  &__label-check {
+    position: relative;
+    margin-bottom: 20px;
+    align-items: baseline;
+    user-select: none;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: $color-link-water;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      opacity: 1;
+      border: 1px solid $color-link-water;
+      margin-right: 0.5em;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 50% 50%;
+      cursor: pointer;
+    }
+  }
+
+  &__check {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  &__check:checked+label::before {
+    background-image: url("/img/svg/tick.svg");
+    background-size: cover;
+  }
+
+  &__link {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: $color-link-water;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      color: darken($color-link-water, 10%);
+    }
+  }
+
+  &__text {
+    width: 270px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: $color-snow;
+
+    b {
+      font-weight: 500;
+    }
+
+    em {
+      font-style: normal;
+      font-weight: 500;
+      color: $color-casablanca;
+    }
+
+    @include viewport--sm {
+      width: 100%;
+      text-align: left;
+    }
+  }
+}

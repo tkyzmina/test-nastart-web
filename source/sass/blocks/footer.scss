@@ -25,12 +25,16 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0;
+    margin-right: 20px;
     padding: 0;
     list-style: none;
   }
 
   &__nav-item {
     margin-right: 30px;
+    font-size: 13px;
+    line-height: 15px;
+    margin-bottom: 20px;
 
     &:last-of-type {
       margin-right: 0;
@@ -43,6 +47,10 @@
   }
 
   &__nav-link {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
     color: $color-snow;
 
     &:hover,
@@ -59,7 +67,7 @@
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
-    margin-right: 10px;
+    margin-right: 20px;
 
     @include viewport--md {
       margin-bottom: 30px;

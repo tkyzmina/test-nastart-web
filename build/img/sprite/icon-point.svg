@@ -1,11 +1,3 @@
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 9 9">
-  <defs/>
-  <g clip-path="url(#point1)">
     <path  d="M4.04.35a2.95 2.95 0 00-2.7 4.15 18.57 18.57 0 002.57 3.8.16.16 0 00.25 0C4.58 7.8 6 6.1 6.72 4.5A2.95 2.95 0 004.03.35zm0 4.47a1.53 1.53 0 110-3.06 1.53 1.53 0 010 3.06z"/>
-  </g>
-  <defs>
-    <!-- <clipPath id="point1">
-      <path fill="#fff" d="M0 0h8v8H0z" transform="translate(.04 .35)"/>
-    </clipPath> -->
-  </defs>
 </svg>
