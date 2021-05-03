@@ -152,7 +152,7 @@ const copy = () => {
 };
 
 const clean = () => {
-  return del("build");
+  return del("build", ".publish");
 };
 
 const build = gulp.series(clean, svgo, copy, css, sprite, js, html, bootstrap);
