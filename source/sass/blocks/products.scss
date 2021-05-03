@@ -2,12 +2,15 @@
   background-color: $color-whisper;
   margin-bottom: 198px;
 
+  @include viewport--sm {
+    margin-bottom: 50px;
+  }
+
   &__title {
     text-transform: uppercase;
     z-index: 2;
 
     @include viewport--sm {
-
       margin-bottom: 30px;
     }
   }

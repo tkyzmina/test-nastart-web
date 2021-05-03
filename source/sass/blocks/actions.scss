@@ -1,0 +1,75 @@
+.actions {
+  .layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include viewport--md {
+      flex-direction: column;
+    }
+  }
+
+  &__events {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-right: 100px;
+
+    @include viewport--lg {
+      margin-right: 0;
+    }
+
+    @include viewport--md {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+
+  &__list {
+    margin-bottom: 20px;
+
+    &:nth-of-type(odd) {
+      margin-top: 90px;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    @include viewport--md {
+      &:nth-of-type(odd) {
+        margin-top: 20px;
+      }
+
+      margin-left: -15px;
+      margin-right: -15px;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__info {
+    margin-right: 20px;
+
+    @include viewport--md {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin: 0;
+    font-family: $font-family--main;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: $color-default-black;
+    opacity: 0.8;
+  }
+}

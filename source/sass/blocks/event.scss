@@ -1,12 +1,24 @@
 .event {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 270px;
   min-height: 302px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
   padding: 34px 20px;
   background-color: $color-default-white;
   border-radius: 20px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+
+    @include viewport--md {
+      margin-bottom: 30px;
+    }
+  }
 
   &__top {
     display: flex;
@@ -59,6 +71,13 @@
     color: $color-black2;
   }
 
+  &__name,
+  &__type,
+  &__price,
+  &__dates {
+    transition: color $default-transition-settings;
+  }
+
   &__locale {
     margin-top: auto;
   }
@@ -73,7 +92,6 @@
     font-size: 10px;
     line-height: 12px;
     color: $color-black2;
-
   }
 
   &__icon {
@@ -91,7 +109,41 @@
   }
 
   .btn {
-    display: none;
-    width: 100%;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -5;
+    opacity: 0;
+    transition: opacity $default-transition-settings, z-index $default-transition-settings;
+  }
+
+  &:hover {
+    background: linear-gradient(180deg, #48a3ff 0%, #007eff 100%);
+
+    .event__name {
+      color: $color-snow;
+    }
+
+    .event__type {
+      color: $color-link-water;
+    }
+
+    .event__dates {
+      color: $color-pale-cornflower-blue;
+    }
+
+    .event__price {
+      color: $color-neon-carrot;
+    }
+
+    .event__locale {
+      display: none;
+    }
+
+    .btn {
+      z-index: 2;
+      opacity: 1;
+    }
   }
 }
