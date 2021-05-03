@@ -96,6 +96,7 @@
 
   &__icon {
     margin-left: 3px;
+    fill: $color-shuttle-grey;
   }
 
   &__place {
@@ -115,7 +116,7 @@
     transform: translateX(-50%);
     z-index: -5;
     opacity: 0;
-    transition: opacity $default-transition-settings, z-index $default-transition-settings;
+    transition: opacity $default-transition-settings;
   }
 
   &:hover {

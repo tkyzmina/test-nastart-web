@@ -38,23 +38,23 @@
     height: 40px;
     margin-top: 12px;
   }
+}
 
-  .button-prev {
-    transform: rotate(180deg);
+.button-prev {
+  transform: rotate(180deg);
+}
+
+.button {
+  width: 30px;
+  height: 32px;
+  background: url('../img/content/arrow-right.png');
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
   }
 
-  .button {
-    width: 30px;
-    height: 32px;
-    background: url('../img/content/arrow-right.png');
-    cursor: pointer;
-
-    &:hover {
-      opacity: 0.7;
-    }
-
-    &:active {
-      opacity: 0.9;
-    }
+  &:active {
+    opacity: 0.9;
   }
 }

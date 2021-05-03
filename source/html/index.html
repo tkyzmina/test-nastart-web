@@ -25,7 +25,7 @@
           <div class="intro__inner">
             <h1 class="intro__title title title--h1">1С&nbsp;&mdash; Отчетность</h1>
             <p class="intro__text">отчетность из 1С одним кликом</p>
-            <button class="btn btn--orange">Оставить заявку</button>
+            <button class="btn btn--orange" data-modal="request">Оставить заявку</button>
           </div>
           <div class="intro__img">
             <div class="intro__wrapper">
@@ -57,7 +57,7 @@
       <section class="actions">
         <div class="layout">
           <div class="actions__info">
-            <h3 class="actions__title title title--h2">Мероприятия</h3>
+            <h2 class="actions__title title title--h2">Мероприятия</h2>
             <p class="actions__text">План мероприятий на 1 квартал 2022 г. :</p>
             <p class="actions__text"> Лекции/ Курсы/ Семинары</p>
           </div>
@@ -73,8 +73,54 @@
           </div>
         </div>
       </section>
-      <div class="container">
-      </div>
+      <section class="news">
+        <div class="layout">
+          <div class="news__info">
+            <h2 class="news__title title title--h2">Hовости</h2>
+            <div class="news__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, in&nbsp;amet dignissim
+              ultrices in&nbsp;neque, pretium augue.</div>
+            <div class="news__controls">
+              <div class="button button-prev"></div>
+              <div class="button button-next"></div>
+            </div>
+          </div>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                @@include("source/html/components/news-card.html",{
+                "path1": "img/content/news-1@1x.png",
+                "path2": "img/content/news-1@2x.png",
+                "alt": "Изображение ноутбука",
+                "link": "#",
+                "news": "Новость 1",
+                "text": "Тут у нас одна интересная новость "
+                })
+              </div>
+              <div class="swiper-slide">
+                @@include("source/html/components/news-card.html",{
+                "path1": "img/content/news-2@1x.png",
+                "path2": "img/content/news-2@2x.png",
+                "alt": "Изображение ноутбука на столе",
+                "link": "#",
+                "news": "Новость 2",
+                "text": "Тут у нас вторая интересная новость "
+                })
+              </div>
+              <div class="swiper-slide">
+                @@include("source/html/components/news-card.html",{
+                "path1": "img/content/news-3@1x.png",
+                "path2": "img/content/news-3@2x.png",
+                "alt": "Изображение Macbook",
+                "link": "#",
+                "news": "Новость 3",
+                "text": "Тут у нас третья интересная новость "
+                })
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
 
     @@include("source/html/base/footer.html")
@@ -85,9 +131,12 @@
 
     @@include("source/html/base/modal.html", {
     "name": "sign-up",
-
     "noScale": true,
+    })
 
+    @@include("source/html/base/modal.html", {
+    "name": "request",
+    "noScale": true,
     })
   </div>
 

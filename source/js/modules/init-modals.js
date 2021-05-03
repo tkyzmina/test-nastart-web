@@ -8,6 +8,8 @@ const modalSuccessBtns = document.querySelectorAll('[data-modal="success"]');
 
 const modalSignUp = document.querySelector(".modal--sign-up");
 const modalSignUpBtn = document.querySelectorAll('[data-modal="sign-up"]');
+const modalRequest = document.querySelector(".modal--request");
+const modalRequestBtn = document.querySelectorAll('[data-modal="request"]');
 
 // аргументы setupModal(modal, closeCallback, modalBtns, openCallback, noPrevDefault, preventScrollLock)
 // возможна инициализация только с первыми аргументом,
@@ -26,6 +28,10 @@ const initModals = () => {
 
   if (modalSignUp && modalSignUpBtn.length) {
     setupModal(modalSignUp, false, modalSignUpBtn);
+  }
+
+  if (modalRequest && modalRequestBtn.length) {
+    setupModal(modalRequest, false, modalRequestBtn);
   }
   if (modalFeedback && modalFeedbackBtns.length) {
     setupModal(modalFeedback, false, modalFeedbackBtns, false, false);

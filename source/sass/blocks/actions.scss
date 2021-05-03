@@ -1,4 +1,10 @@
 .actions {
+  margin-bottom: 180px;
+
+  @include viewport--sm {
+    margin-bottom: 50px;
+  }
+
   .layout {
     display: flex;
     justify-content: space-between;

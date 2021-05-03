@@ -1,3 +1,128 @@
 .footer {
+  padding: 74px 0;
+  background-color: $color-haiti;
 
+  .layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include viewport--md {
+      flex-direction: column;
+    }
+  }
+
+  &__nav {
+    margin-right: 10px;
+
+    @include viewport--md {
+      margin-bottom: 30px;
+      margin-right: 0;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__nav-item {
+    margin-right: 30px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    @include viewport--md {
+      margin-bottom: 10px;
+      margin-right: 20px;
+    }
+  }
+
+  &__nav-link {
+    color: $color-snow;
+
+    &:hover,
+    &:focus {
+      color: darken($color-snow, 20%);
+    }
+
+    &:active {
+      color: darken($color-snow, 10%);
+    }
+  }
+
+  &__tel {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-right: 10px;
+
+    @include viewport--md {
+      margin-bottom: 30px;
+      margin-right: 0;
+    }
+  }
+
+  &__contacts {
+    flex-grow: 0;
+    width: 260px;
+
+    @include viewport--md {
+      width: 100%;
+      margin-bottom: 30px;
+      margin-right: 0;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: $color-casablanca;
+    transition: fill $default-transition-settings;
+  }
+
+  &__tel-link,
+  &__contacts-block {
+    display: block;
+    position: relative;
+    margin-bottom: 16px;
+    padding-left: 24px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    color: $color-snow;
+    transition: color $default-transition-settings;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover,
+    &:focus {
+      color: $color-casablanca;
+    }
+
+    &:active {
+      color: darken($color-casablanca, 10%);
+
+      .footer__icon {
+        fill: darken($color-casablanca, 10%);
+      }
+    }
+  }
+
+  &__about {
+    font-family: $font-family--second;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: $color-lavender;
+  }
 }

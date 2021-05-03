@@ -19,7 +19,6 @@ const swiper = new Swiper(".swiper-container", {
       slidesPerView: 2,
       spaceBetween: 20,
     },
-
     1024: {
       slidesPerView: 3,
       spaceBetween: 30,
@@ -31,4 +30,36 @@ const swiper = new Swiper(".swiper-container", {
   },
 });
 
-export { swiper };
+const newsSlider = new Swiper(".news .swiper-container", {
+  speed: 400,
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  navigation: {
+    nextEl: ".news .button-next",
+    prevEl: ".news .button-prev",
+  },
+  autoplay: {
+    delay: 9000,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1250: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+});
+
+export { swiper, newsSlider };
