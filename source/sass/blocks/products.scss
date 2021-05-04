@@ -27,6 +27,7 @@
 
     @include viewport--sm {
       flex-direction: column;
+      margin-bottom: 30px;
     }
   }
 

@@ -29,6 +29,7 @@
   }
 
   &__text {
+    margin-bottom: 30px;
     font-family: $font-family--main;
     font-style: normal;
     font-weight: 400;
@@ -49,7 +50,8 @@
 
     @include viewport--sm {
       bottom: -50px;
-      left: 0;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }
