@@ -949,49 +949,49 @@ button.swiper-pagination-bullet {
   }
 } */
 @font-face {
-  font-family: 'Rubik';
+  font-family: "Rubik";
   src: url("../fonts/Rubik-Light.woff2") format("woff2"), url("../fonts/Rubik-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Rubik';
+  font-family: "Rubik";
   src: url("../fonts/Rubik-Medium.woff2") format("woff2"), url("../fonts/Rubik-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Rubik';
+  font-family: "Rubik";
   src: url("../fonts/Rubik-Regular.woff2") format("woff2"), url("../fonts/Rubik-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Rubik';
+  font-family: "Rubik";
   src: url("../fonts/Rubik-SemiBold.woff2") format("woff2"), url("../fonts/Rubik-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Rubik';
-  src: url("../fonts/Rubik-Bold.woff2") format("woff2"), url("../fonts/Rubik-Bold.woff") format("woff");
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Bold.woff2") format("woff2"), url("../fonts/Rubik-Bold.woff") format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/OpenSans-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
@@ -1509,7 +1509,9 @@ main {
     font-size: 13px;
     line-height: 15px;
     text-transform: uppercase;
-    color: #f9f9f9; }
+    color: #f9f9f9;
+    -webkit-transition: color 0.3s ease;
+    transition: color 0.3s ease; }
     .footer__nav-link:hover, .footer__nav-link:focus {
       color: #c6c6c6; }
     .footer__nav-link:active {
@@ -1831,8 +1833,8 @@ main {
 
 .button {
   width: 30px;
-  height: 32px;
-  background: url("../img/content/arrow-right.png");
+  height: 29px;
+  background: url("../img/content/arrow-right.svg");
   cursor: pointer; }
   .button:hover {
     opacity: 0.7; }
@@ -1852,8 +1854,6 @@ main {
     transition: max-height 0.3s ease, opacity 0.3s ease; }
   .card__content {
     background: #ffffff;
-    -webkit-box-shadow: 0 1px 20px rgba(153, 175, 255, 0.4);
-            box-shadow: 0 1px 20px rgba(153, 175, 255, 0.4);
     border-radius: 20px;
     overflow: hidden;
     -webkit-transition: height 0.3s ease;
@@ -1918,7 +1918,7 @@ main {
 
 .actions {
   margin-bottom: 180px; }
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     .actions {
       margin-bottom: 50px; } }
   .actions .layout {
@@ -2261,6 +2261,10 @@ main {
   padding-top: 300px;
   padding-bottom: 500px;
   background: url("../img/content/feedback-bg.svg") no-repeat 50% 0; }
+  @media (max-width: 1023px) {
+    .feedback {
+      padding-top: 50px;
+      padding-bottom: 50px; } }
   .feedback__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2321,7 +2325,9 @@ main {
     background-color: transparent;
     border-bottom: 1px solid #c5ccd4;
     color: #c5ccd4;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; }
     .feedback__input::-webkit-input-placeholder {
       color: #c5ccd4; }
     .feedback__input::-moz-placeholder {
@@ -2332,6 +2338,8 @@ main {
       color: #c5ccd4; }
     .feedback__input::placeholder {
       color: #c5ccd4; }
+    .feedback__input:hover, .feedback__input:focus {
+      opacity: 0.8; }
   .feedback__label-check {
     position: relative;
     margin-bottom: 20px;
@@ -2362,7 +2370,11 @@ main {
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 50% 50%;
-      cursor: pointer; }
+      cursor: pointer;
+      -webkit-transition: opacity 0.3s ease;
+      transition: opacity 0.3s ease; }
+    .feedback__label-check:hover::before, .feedback__label-check:focus::before {
+      opacity: 0.8; }
   .feedback__check {
     position: absolute;
     z-index: -1;
@@ -2376,7 +2388,9 @@ main {
     font-size: 16px;
     line-height: 19px;
     color: #c5ccd4;
-    text-decoration: underline; }
+    text-decoration: underline;
+    -webkit-transition: color 0.3s ease;
+    transition: color 0.3s ease; }
     .feedback__link:hover, .feedback__link:focus {
       color: #a8b2be; }
   .feedback__text {

@@ -3,6 +3,11 @@
   padding-bottom: 500px;
   background: url("../img/content/feedback-bg.svg") no-repeat 50% 0;
 
+  @include viewport--md {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -57,9 +62,15 @@
     border-bottom: 1px solid $color-link-water;
     color: $color-link-water;
     cursor: pointer;
+    transition: opacity $default-transition-settings;
 
     &::placeholder {
       color: $color-link-water;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
     }
   }
 
@@ -87,6 +98,12 @@
       background-position: center center;
       background-size: 50% 50%;
       cursor: pointer;
+      transition: opacity $default-transition-settings;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      opacity: 0.8;
     }
   }
 
@@ -108,6 +125,7 @@
     line-height: 19px;
     color: $color-link-water;
     text-decoration: underline;
+    transition: color $default-transition-settings;
 
     &:hover,
     &:focus {

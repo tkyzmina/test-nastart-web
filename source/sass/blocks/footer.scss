@@ -52,6 +52,7 @@
     line-height: 15px;
     text-transform: uppercase;
     color: $color-snow;
+    transition: color $default-transition-settings;
 
     &:hover,
     &:focus {
